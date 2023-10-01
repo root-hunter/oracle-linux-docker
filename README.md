@@ -1,0 +1,1 @@
+sqlplus sys/password@//localhost:1521/FREE as sysdba
