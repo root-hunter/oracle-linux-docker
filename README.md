@@ -92,9 +92,12 @@ To get a local copy up and running follow these simple example steps.
 
 The main prequisite is docker and docker compose.
 * Docker (Install Guide)
+  <br />
   <a>https://docs.docker.com/engine/install/</a>
-* Docker Desktop (Optiona, but highly raccomanded)
+* Docker Desktop (Optional, but highly raccomanded)
+  <br />
   Windows: <a>https://docs.docker.com/desktop/install/windows-install/</a>
+  <br />
   Linux: <a>https://docs.docker.com/desktop/install/linux-install/</a>
 
 ### Installation
