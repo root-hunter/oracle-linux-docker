@@ -124,7 +124,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/root-hunter/oracle-docker/blob/master/LICENSE.txt
+[license-url]: https://github.com/root-hunter/oracle-docker/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://it.linkedin.com/in/antonio-ricciardi-279118210
-[product-screenshot]: https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AOracle_linux_logo.svg&psig=AOvVaw2Qf6newURCPLxo8ur9Ug5k&ust=1696253525028000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDsoPj61IEDFQAAAAAdAAAAABAE
