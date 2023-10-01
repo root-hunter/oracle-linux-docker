@@ -27,6 +27,8 @@
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Oracle_linux_logo.svg" alt="Logo" height="200">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/1920px-Docker_%28container_engine%29_logo.svg.png" alt="Logo" height="200">
+    <img src="https://media.licdn.com/dms/image/D5612AQGTzGGnu886Vw/article-cover_image-shrink_720_1280/0/1680581578662?e=2147483647&v=beta&t=Jc3XYEXXsZNfua5Dy96AX17G59H2LrEj4mcGb6rWt60", align="right" height="400">
+    
   </a>
 
   <h3 align="center">Oracle Linux Docker</h3>
