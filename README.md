@@ -78,6 +78,10 @@ _Below is an example of how to create Oracle Linux container and how to configur
    ```sh
    /etc/init.d/oracle-free-23c configure
    ```
+4. Log into database
+   ```sh
+   sqlplus sys/password@//localhost:1521/FREE as sysdba
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
