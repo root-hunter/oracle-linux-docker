@@ -78,10 +78,39 @@ _Below is an example of how to create Oracle Linux container and how to configur
    ```sh
    /etc/init.d/oracle-free-23c configure
    ```
-4. Log into database
+4a.a. Log into database (Shell - Pluggable Database (PDB))
    ```sh
-   sqlplus sys/password@//localhost:1521/FREE as sysdba
+sqlplus sys@localhost:1521/FREEPDB1 as sysdba
    ```
+4a.b. Log into database (Shell - Container Database (CDB))
+   ```sh
+sqlplus sys@localhost:1521/FREE as sysdba
+   ```
+4b. Log into database (Java)
+   ```java
+OracleDataSource ods = new OracleDataSource();
+ods.setURL("jdbc:oracle:thin:@localhost:1521/FREEPDB1"); // jdbc:oracle:thin@[hostname]:[port]/[DB service name]
+ods.setUser("[Username]");
+ods.setPassword("[Password]");
+Connection conn = ods.getConnection();
+ 
+PreparedStatement stmt = conn.prepareStatement("SELECT 'Hello World!' FROM dual");
+ResultSet rslt = stmt.executeQuery();
+while (rslt.next()) {
+  System.out.println(rslt.getString(1));
+}
+   ```
+4c. Log into database (Python)
+   ```python
+import oracledb
+
+conn = oracledb.connect(user="[Username]", password="[Password]", dsn="localhost:1521/FREEPDB1")
+with conn.cursor() as cur:
+   cur.execute("SELECT 'Hello World!' FROM dual")
+   res = cur.fetchall()
+   print(res)
+   ```
+4x. For more log snippet visit: <a>https://www.oracle.com/in/database/free/get-started/</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
