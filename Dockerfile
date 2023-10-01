@@ -8,6 +8,7 @@ FROM oraclelinux:8
 ENV DOCKER_HOME=/docker
 ENV DOCKER_LIBS=$DOCKER_HOME/deps
 
+ENV ORACLE_HOME=/opt/oracle/product/23c/dbhomeFree/
 ENV ORACLE_SID=ORCLCDB
 ENV ORACLE_PDB=ORCLPDB1
 ENV ORACLE_DOCKER_INSTALL=true
@@ -24,7 +25,6 @@ RUN dnf -y install oracle-database-preinstall-23c
 
 RUN cd $DOCKER_LIBS; yum -y localinstall *.rpm
 RUN rm $DOCKER_LIBS/*
-
 
 RUN dnf install -y oracle-instantclient-release-el8
 RUN dnf install -y oracle-instantclient-sqlplus

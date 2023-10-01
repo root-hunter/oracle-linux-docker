@@ -9,11 +9,5 @@ services:
 
     #volumes:
     #  - ./config/listener.ora:/opt/oracle/product/23c/dbhomeFree/network/admin/listener.ora
-
     ports:
       - 1512:1512 #Share the default Oracle Database port with host machine
-    networks:
-      - oraclelinux-network
-
-networks:
-  oraclelinux-network:
