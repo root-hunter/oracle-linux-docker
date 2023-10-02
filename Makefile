@@ -10,6 +10,7 @@ remove:
 	docker compose rm
 
 download-deps:
+	#Comment commands below if you are on Windows or replace with corrisponding Windows commands.
 	rm -f -r deps
 	mkdir deps
 	cd deps; wget ${ORACLE_FREE_DB_URL}
